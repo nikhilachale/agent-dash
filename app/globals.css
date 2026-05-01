@@ -85,15 +85,3 @@ button {
   background: rgb(var(--primary-soft-rgb) / 0.28);
   color: var(--foreground);
 }
-
-@property --angle {
-  syntax: "<angle>";
-  initial-value: 0deg;
-  inherits: false;
-}
-
-@keyframes spin-angle {
-  to {
-    --angle: 360deg;
-  }
-}

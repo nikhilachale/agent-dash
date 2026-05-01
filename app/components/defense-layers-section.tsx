@@ -174,24 +174,25 @@ export default function DefenseLayersSection({
               >
               <article
                 data-defense-card
-                className={`relative h-full overflow-hidden rounded-3xl border ${accent.ring} bg-[linear-gradient(155deg,rgb(255_255_255/0.05),rgb(255_255_255/0.02))] p-7 will-change-transform transition-[box-shadow,border-color] duration-500 group-hover:border-primary-soft/60`}
+                className="relative h-full overflow-hidden rounded-3xl p-7 will-change-transform transition-[box-shadow] duration-500"
                 style={{
-                  boxShadow: `0 30px 70px -40px ${accent.glow}, inset 0 1px 0 rgb(255 255 255 / 0.04)`,
+                  boxShadow: `0 30px 70px -40px ${accent.glow}`,
                 }}
               >
                 <span
                   aria-hidden
-                  className="pointer-events-none absolute inset-0 rounded-3xl opacity-70 transition-opacity duration-500 group-hover:opacity-100"
+                  className="pointer-events-none absolute left-1/2 top-1/2 aspect-square w-[200%] -translate-x-1/2 -translate-y-1/2 animate-spin opacity-90 [animation-duration:4s] group-hover:opacity-100"
                   style={{
-                    padding: '1.5px',
                     background:
-                      'conic-gradient(from var(--angle), transparent 0deg, rgb(var(--primary-soft-rgb) / 0.95) 80deg, transparent 160deg)',
-                    animation: 'spin-angle 4s linear infinite',
-                    WebkitMask:
-                      'linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0)',
-                    WebkitMaskComposite: 'xor',
-                    mask: 'linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0)',
-                    maskComposite: 'exclude',
+                      'conic-gradient(from 0deg, transparent 0deg, rgb(var(--primary-soft-rgb) / 1) 60deg, rgb(var(--primary-rgb) / 0.6) 90deg, transparent 150deg)',
+                  }}
+                />
+                <span
+                  aria-hidden
+                  className="pointer-events-none absolute inset-[2px] rounded-[22px]"
+                  style={{
+                    background:
+                      'linear-gradient(155deg, rgb(255 255 255 / 0.05), rgb(255 255 255 / 0.02)), var(--background-mid)',
                   }}
                 />
                 <div

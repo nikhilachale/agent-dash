@@ -49,18 +49,6 @@ export default function HeroSection() {
         </a>
       </div>
 
-      <div className="mt-16 grid max-w-4xl grid-cols-2 gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04] backdrop-blur-md sm:grid-cols-4">
-        {heroStats.map((stat) => (
-          <div key={stat.label} className="bg-[rgb(3_7_13/0.7)] p-5">
-            <p className="font-mono text-[10px] uppercase tracking-[0.28em] text-white/45">
-              {stat.label}
-            </p>
-            <p className="mt-2 font-sans text-2xl font-semibold text-white sm:text-3xl">
-              {stat.value}
-            </p>
-          </div>
-        ))}
-      </div>
     </section>
   )
 }

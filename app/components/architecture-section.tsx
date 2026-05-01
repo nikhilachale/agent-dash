@@ -56,7 +56,7 @@ function OperatingFlowCard({ operatingFlow }: { operatingFlow: string[] }) {
         <div className="relative mt-8 space-y-3">
           <div
             aria-hidden
-            className="pointer-events-none absolute left-[18px] top-3 bottom-3 w-px bg-gradient-to-b from-primary via-foreground/15 to-transparent"
+            className="pointer-events-none absolute   w-px bg-linear-to-b from-primary via-foreground/15 to-transparent"
           />
           {operatingFlow.map((step, index) => (
             <FlowStep key={step} step={step} index={index} />
@@ -98,9 +98,9 @@ function Web3BenefitsCard() {
           {web3Benefits.map((line, i) => (
             <div
               key={i}
-              className="group relative z-0 rounded-2xl border border-white/8 bg-white/[0.03] p-5 transition-all duration-300 ease-out will-change-transform hover:z-10 hover:-translate-y-1 hover:scale-[1.02] hover:border-primary-soft/40 hover:bg-white/[0.05] hover:shadow-[0_18px_40px_-20px_rgb(var(--primary-rgb)/0.5)]"
+              className="group relative z-0 rounded-2xl border border-white/8 bg-white/3 p-5 transition-all duration-300 ease-out will-change-transform hover:z-10 hover:-translate-y-1 hover:scale-[1.02] hover:border-primary-soft/40 hover:shadow-[0_18px_40px_-20px_rgb(var(--primary-rgb)/0.5)]"
             >
-              <span className="absolute left-0 top-5 h-8 w-[3px] rounded-r-full bg-gradient-to-b from-primary-soft to-primary-soft/0 transition-all duration-300 group-hover:h-10" />
+              <span className="absolute left-0 top-5 h-8 w-0.75 rounded-r-full bg-linear-to-b from-primary-soft to-primary-soft/0 transition-all duration-300 group-hover:h-10" />
               <p className="pl-3 text-base leading-7 text-slate-200">{line}</p>
             </div>
           ))}
