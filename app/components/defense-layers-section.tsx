@@ -164,7 +164,7 @@ export default function DefenseLayersSection({
           </div>
         </div>
 
-        <div className="mt-16 grid gap-6 lg:grid-cols-3 [perspective:1200px]">
+        <div className="mt-16 grid gap-6 lg:grid-cols-3 perspective-distant">
           {guardrailLayers.map((layer, index) => {
             const accent = layerAccents[layer.id] ?? layerAccents['01']
             return (
@@ -174,7 +174,7 @@ export default function DefenseLayersSection({
               >
               <article
                 data-defense-card
-                className="relative h-full overflow-hidden rounded-3xl p-7 will-change-transform transition-[box-shadow] duration-500"
+                className="relative h-full overflow-hidden rounded-3xl p-7 will-change-transform transition-shadow duration-500"
                 style={{
                   boxShadow: `0 30px 70px -40px ${accent.glow}`,
                 }}
@@ -189,7 +189,7 @@ export default function DefenseLayersSection({
                 />
                 <span
                   aria-hidden
-                  className="pointer-events-none absolute inset-[2px] rounded-[22px]"
+                  className="pointer-events-none absolute inset-0.5 rounded-[22px]"
                   style={{
                     background:
                       'linear-gradient(155deg, rgb(255 255 255 / 0.05), rgb(255 255 255 / 0.02)), var(--background-mid)',

@@ -82,7 +82,7 @@ export default function ProblemSection() {
             </h2>
 
             <div className="mt-8 grid grid-cols-2 gap-3">
-              <div className="rounded-2xl border border-white/8 bg-white/[0.03] p-4 backdrop-blur-sm">
+              <div className="rounded-2xl border border-white/8 bg-white/3 p-4 backdrop-blur-sm">
                 <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-white/45">
                   Avg drain time
                 </p>
@@ -90,7 +90,7 @@ export default function ProblemSection() {
                   &lt; 12<span className="text-base text-white/50">s</span>
                 </p>
               </div>
-              <div className="rounded-2xl border border-white/8 bg-white/[0.03] p-4 backdrop-blur-sm">
+              <div className="rounded-2xl border border-white/8 bg-white/3 p-4 backdrop-blur-sm">
                 <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-white/45">
                   Recovery rate
                 </p>
@@ -102,8 +102,8 @@ export default function ProblemSection() {
           </div>
 
           <div className="grid gap-5 text-base leading-8 text-slate-300">
-            <div className="relative rounded-2xl border border-white/8 bg-white/[0.03] p-6">
-              <span className="absolute left-0 top-6 h-8 w-[3px] rounded-r-full bg-gradient-to-b from-secondary to-secondary-soft/0" />
+            <div className="relative rounded-2xl border border-white/8 bg-white/3 p-6">
+              <span className="absolute left-0 top-6 h-8 w-0.75 rounded-r-full bg-linear-to-b from-secondary to-secondary-soft/0" />
               <p className="font-mono text-[10px] uppercase tracking-[0.28em] text-secondary-soft/80">
                 Today
               </p>
@@ -114,7 +114,7 @@ export default function ProblemSection() {
             </div>
 
             <div className="relative rounded-2xl border border-primary-soft/20 bg-[linear-gradient(135deg,rgb(var(--primary-rgb)/0.08),transparent_70%)] p-6">
-              <span className="absolute left-0 top-6 h-8 w-[3px] rounded-r-full bg-gradient-to-b from-primary-soft to-primary-soft/0" />
+              <span className="absolute left-0 top-6 h-8 w-0.75 rounded-r-full bg-linear-to-b from-primary-soft to-primary-soft/0" />
               <p className="font-mono text-[10px] uppercase tracking-[0.28em] text-primary-soft/80">
                 With Guardrails
               </p>

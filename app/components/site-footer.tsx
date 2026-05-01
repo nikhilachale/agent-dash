@@ -48,7 +48,7 @@ function FooterCallout() {
           </p>
           <h2 className="mt-4 max-w-2xl font-sans text-3xl font-semibold tracking-[-0.04em] text-foreground sm:text-5xl">
             Autonomous agents should feel{' '}
-            <span className="bg-gradient-to-r from-primary-soft to-primary bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-primary-soft to-primary bg-clip-text text-transparent">
               powerful
             </span>
             , not impossible to control.

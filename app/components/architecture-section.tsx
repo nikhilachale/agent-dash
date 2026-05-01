@@ -22,7 +22,7 @@ export default function ArchitectureSection({
         </p>
         <h2 className="mt-4 font-sans text-3xl font-semibold tracking-[-0.04em] text-foreground sm:text-5xl">
           Built to make policy enforcement{' '}
-          <span className="bg-gradient-to-r from-primary-soft to-primary bg-clip-text text-transparent">
+          <span className="bg-linear-to-r from-primary-soft to-primary bg-clip-text text-transparent">
             visible, auditable, and fast.
           </span>
         </h2>
@@ -69,7 +69,7 @@ function OperatingFlowCard({ operatingFlow }: { operatingFlow: string[] }) {
 
 function FlowStep({ step, index }: { step: string; index: number }) {
   return (
-    <div className="group relative z-0 flex items-start gap-4 rounded-2xl border border-white/8 bg-white/[0.03] p-4 transition-all duration-300 ease-out will-change-transform hover:z-10 hover:-translate-y-1 hover:scale-[1.02] hover:border-primary-soft/40 hover:bg-white/[0.06] hover:shadow-[0_18px_40px_-20px_rgb(var(--primary-rgb)/0.5)]">
+    <div className="group relative z-0 flex items-start gap-4 rounded-2xl border border-white/8 bg-white/3 p-4 transition-all duration-300 ease-out will-change-transform hover:z-10 hover:-translate-y-1 hover:scale-[1.02] hover:border-primary-soft/40 hover:bg-white/6 hover:shadow-[0_18px_40px_-20px_rgb(var(--primary-rgb)/0.5)]">
       <div className="relative z-10 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[linear-gradient(135deg,var(--primary-strong),var(--primary))] font-mono text-sm font-semibold text-slate-950 shadow-[0_0_20px_rgb(var(--primary-rgb)/0.4)]">
         {index + 1}
       </div>

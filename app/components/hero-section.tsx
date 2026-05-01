@@ -1,10 +1,3 @@
-const heroStats = [
-  { label: 'Agents on Solana', value: '250K+' },
-  { label: 'Pause latency', value: '<3s' },
-  { label: 'Policy layers', value: '3' },
-  { label: 'CPI overhead', value: '~1k CU' },
-]
-
 export default function HeroSection() {
   return (
     <section className="relative z-10 mx-auto flex min-h-screen w-full max-w-7xl flex-col justify-center px-6 py-20 sm:px-10 lg:px-12">
@@ -20,7 +13,7 @@ export default function HeroSection() {
         </div>
         <h1 className="max-w-5xl font-sans text-5xl font-semibold leading-[0.92] tracking-tighter sm:text-6xl lg:text-8xl">
           Agent
-          <span className="bg-gradient-to-r from-primary-soft via-primary-strong to-primary bg-clip-text text-transparent"> Guardrails</span>{' '}
+          <span className="bg-linear-to-r from-primary-soft via-primary-strong to-primary bg-clip-text text-transparent"> Guardrails</span>{' '}
           Protocol
         </h1>
         <p className="mt-8 max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl">
